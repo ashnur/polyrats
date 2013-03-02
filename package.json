@@ -1,11 +1,30 @@
 {
-  "name": "piper",
+  "name": "polyrats",
   "version": "0.0.0",
   "description": "polynumbers",
   "main": "index",
   "scripts": {
     "test": "mocha"
   },
-  "author": "totemizer",
-  "license": "dafuq"
+  "author": "ashnur",
+  "license": "DAFUQ",
+  "gitHead": "4c3695497ee67e046a58461f9701f54b246e32fe",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ashnur/piper.git"
+  },
+  "dependencies" : {
+    "rationals" : "*"
+  },
+  "keywords": [
+    "polynumber",
+    "polyrat",
+    "polyrational",
+    "algebra",
+    "linear",
+    "algebra"
+  ]
 }
