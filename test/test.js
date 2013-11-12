@@ -1,7 +1,10 @@
+//require('look').start();
 describe("piper", function(){
-    var p, piper, expect ;
-    expect = require('expect.js')
-    p = piper = require(__dirname + '/../index.js')
+    var expect = require('expect.js')
+    var piper = require(__dirname + '/../index.js')
+    var p = piper
+    var V = require('momentum')
+    var R = V.r
     function riser(to){
         var a = [], i;
         for ( i=0; i<to-1; i++ ){ a[i] = 0 }
@@ -86,10 +89,6 @@ describe("piper", function(){
             , t3 = p(t1,t2)
 
             ;
-        //console.log(t1.per(t2))
-        //console.log(t1.toPolynom('x'))
-        //console.log(t2.toPolynom('x'))
-        //console.log(t3.toPolynom('x'))
         expect(p([4,16,44,92,80,52]).per(p([-16,-40,-88,-120,40,88,136])))
                 .to.equal(p([1,3,7,13],[-4,-6,-12,-12,34]))
         expect(p([-1,0,0,1]).per(p([-3,3]))).to.equal(p([1,1,1]).per(p([3])))
